@@ -1,5 +1,5 @@
 console.log("Hello World");
-//let isB = false, isI = false,isN = false, isG = false,isO = false;
+let isB = false, isI = false,isN = false, isG = false,isO = false;
 
 
 
@@ -22,33 +22,33 @@ function generateNumber (maxNumber) {
    // Conditional operator
    // GE >=, LTE <=, EQ ==, NEQ ! =, AND &&, OR ||
     if (randomNumber <= 15) {
-       // isB = true;
+       isB = true;
         console.log('The Number is in "B"');
         
     } else if (randomNumber>= 16 && randomNumber <= 30) {
-       // isI = true;
+        isI = true;
         console.log('The Number is in "I"');
         
     } else if (randomNumber>= 31 && randomNumber <= 45) {
-      // isN = true;
+       isN = true;
        console.log('The Number is in "N"');
         
     } else if (randomNumber >= 46 && randomNumber <= 60) {
-       // isG = true;
+        isG = true;
         console.log('The Number is in "G"');
         
     } else if (randomNumber >= 61 && randomNumber <= 75) {
-       // isO = true;
+       isO = true;
         console.log('The Number is in"O"');
         
     } else {
         console.log('The number is invalid.');
     }
 
- //   if (isB == true && isI==true && isN == true && isG == true && isO == true) {console.log('BINGOOOOOOO!!!!');}
+ if (isB == true && isI==true && isN == true && isG == true && isO == true) {console.log('BENGOOOOOOOOOO!!!!');}
      
-    
 }
      
 
-//let counter = 10;
+let counter = 10;
+
