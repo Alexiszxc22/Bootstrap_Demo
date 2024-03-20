@@ -34,12 +34,12 @@ function generateNumber(maxNumber) {
     } else if (randomNumber >= 31 && randomNumber <= 45) {
         NNumber = randomNumber;
         isN = true;
-        console.log('The Number is ${randomNumber} in "N"');
+        console.log('The Number ${randomNumber} is in "N"');
 
     } else if (randomNumber >= 46 && randomNumber <= 60) {
         GNumber = randomNumber;
         isG = true;
-        console.log('The Number is ${randomNumber} in "G"');
+        console.log('The Number is ${randomNumber} is in "G"');
 
     } else if (randomNumber >= 61 && randomNumber <= 75) {
         ONumber = randomNumber;
