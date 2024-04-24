@@ -1,445 +1,168 @@
-console.log("Hello World");
+console.log("Hello World")
+let Array = [[], [], [], [], []];
 let B = false, 
 I = false,
 N = false, 
 G = false,
 O = false;
 
-let BNumber, INumber, NNumber, GNumber, ONumber;
+function newNumber(maxNumber) {
 
-let B1 = 0,
-B2 = 0;
-B3 = 0,
-B4 = 0,
-B5 = 0;
+    let loop = true;
+    let loop2 = true;
+    let loop3 = true;
+    let loop4 = true;
+    let loop5 = true;
 
-let I1 = 0,
-I2 = 0;
-I3 = 0,
-I4 = 0,
-I5 = 0;
 
-let N1 = 0,
-N2 = 0;
-N3 = 0,
-N4 = 0,
-N5 = 0;
-
-let G1 = 0,
-G2 = 0;
-G3 = 0,
-G4 = 0,
-G5 = 0;
-
-let O1 = 0,
-O2 = 0;
-O3 = 0,
-O4 = 0,
-O5 = 0;
-
-function newNumber1 (maxNumber) {
-    // Addition = "+"
-    // Subtraction = "-"
-    // Multiplication = "*"
-    // Division = "/"
-    // Remainder = "%"
-
-   let x = Math.floor(Math.random() * maxNumber) + 1;
-
-   // if ... else if ... else statement
-   // Conditional operator
-   // GE >=, LTE <=, EQ ==, NEQ ! =, AND &&, OR ||
-    if (x <= 15) {
-        if (x != B2 && x != B3 && x != B4 && x != B5) {
-        console.log(`New number is ${x} belongs to "B"`);
-        B = true;
-        document.querySelector("#td1").textContent = x;
-        BNumber = x;
-        B1 = x;
+    while (loop == true) {
+        let x = Math.floor(Math.random() * maxNumber) + 1;
+        if (x <= 15) {
+            console.log(`The number is ${x} belongs to "B"`);
+            B = true;
+            BNumber = x;
+            if (!Array[0].includes(x)) {
+                Array[0].push(x);
+            document.querySelector("#td1").textContent = Array[0][0];
+            document.querySelector("#td6").textContent = Array[0][1];
+            document.querySelector("#td11").textContent = Array[0][2];
+            document.querySelector("#td16").textContent = Array[0][3];
+            document.querySelector("#td21").textContent = Array[0][4];
+            }
+            if (Array[0][0,1,2,3,4] != null) {
+                B = true;
+                loop = false;
+            }
         }
-    } else if (x >= 16 && x <= 30) {
-        if (x != I2 && x != I3 && x != I4 && x != I5) {
-        console.log(`New number is ${x} belongs to "I"`);
-        I = true;
-        document.querySelector("#td2").textContent = x;
-        INumber = x;
-        I1 = x;
+    }
+    while (loop2 == true) {
+        let x = Math.floor(Math.random() * maxNumber) + 1;
+        if (x >= 16 && x <= 30) {
+            console.log(`The number is ${x} belongs to "I"`);
+            I = true;
+            INumber = x;
+            if (!Array[1].includes(x)) {
+                Array[1].push(x);
+            document.querySelector("#td2").textContent = Array[1][0];
+            document.querySelector("#td7").textContent = Array[1][1];
+            document.querySelector("#td12").textContent = Array[1][2];
+            document.querySelector("#td17").textContent = Array[1][3];
+            document.querySelector("#td22").textContent = Array[1][4];
+            }
+            if (Array[1][0,1,2,3,4] != null) {
+                I = true;
+                loop2 = false;
+            }
         }
-    } else if (x >= 31 && x <= 45) {
-        if (x != N2 && x != N3 && x != N4 && x != N5) {
-        console.log(`New number is ${x} belongs to "N"`);
-        N = true;
-        document.querySelector("#td3").textContent = x;
-        NNumber = x;
-        N1 = x;
+    }
+    while (loop3 == true) {
+        let x = Math.floor(Math.random() * maxNumber) + 1;
+        if (x >= 31 && x <= 45) {
+            console.log(`The number is ${x} belongs to "N"`);
+            N = true;
+            NNumber = x;
+            if (!Array[2].includes(x)) {
+                Array[2].push(x);
+            document.querySelector("#td3").textContent = Array[2][0];
+            document.querySelector("#td8").textContent = Array[2][1];
+            document.querySelector("#td18").textContent = Array[2][3];
+            document.querySelector("#td23").textContent = Array[2][4];
+            }
+            if (Array[2][0,1,2,3,4] != null) {
+                N = true;
+                loop3 = false;
+            }
         }
-    } else if (x >= 46 && x <= 60) {
-        if (x != G2 && x != G3 && x != G4 && x != G5) {
-        console.log(`New number is ${x} belongs to "G"`);
-        G = true;
-        document.querySelector("#td4").textContent = x;
-        GNumber = x;
-        G1 = x;
+    }
+    while (loop4 == true) {
+        let x = Math.floor(Math.random() * maxNumber) + 1;
+        if (x >= 46 && x <= 60) {
+            console.log(`The number is ${x} belongs to "G"`);
+            G = true;
+            GNumber = x;
+            if (!Array[3].includes(x)) {
+                Array[3].push(x);
+            document.querySelector("#td4").textContent = Array[3][0];
+            document.querySelector("#td9").textContent = Array[3][1];
+            document.querySelector("#td14").textContent = Array[3][2];
+            document.querySelector("#td19").textContent = Array[3][3];
+            document.querySelector("#td24").textContent = Array[3][4];
+            }
+            if (Array[3][0,1,2,3,4] != null) {
+                G = true;
+                loop4 = false;
+            }
         }
-    } else if (x >= 61 && x <= 75) {
-        if (x != O2 && x != O3 && x != O4 && x != O5) {
-        console.log(`New number is ${x} belongs to "O"`);
-        O = true;
-        document.querySelector("#td5").textContent = x;
-        ONumber = x;
-        O1 = x;
+    }
+    while (loop5 == true) {
+        let x = Math.floor(Math.random() * maxNumber) + 1;
+        if (x >= 61 && x <= 75) {
+            console.log(`The number is ${x} belongs to "O"`);
+            O = true;
+            ONumber = x;
+            if (!Array[4].includes(x)) {
+            Array[4].push(x);
+            document.querySelector("#td5").textContent = Array[4][0];
+            document.querySelector("#td10").textContent = Array[4][1];
+            document.querySelector("#td15").textContent = Array[4][2];
+            document.querySelector("#td20").textContent = Array[4][3];
+            document.querySelector("#td25").textContent = Array[4][4];
+            }
+            if (Array[4][0,1,2,3,4] != null) {
+                O = true;
+                loop5 = false;
+            }
         }
-    } else {
-        console.log(`ew number ${x} is invalid.`);
     }
 
-    if (B == true && I==true && N == true && G == true && O == true) {
-     console.log(`BINGOOOOOOO!!!!`);   
-     console.table({
-        B: BNumber,
-        I: INumber,
-        N: NNumber,
-        G: GNumber,
-        O: ONumber,
-     });
-    }
-}
-
-function newNumber2 (maxNumber) {
-    // Addition = "+"
-    // Subtraction = "-"
-    // Multiplication = "*"
-    // Division = "/"
-    // Remainder = "%"
-
-   let x = Math.floor(Math.random() * maxNumber) + 1;
-
-   // if ... else if ... else statement
-   // Conditional operator
-   // GE >=, LTE <=, EQ ==, NEQ ! =, AND &&, OR ||
-    if (x <= 15) {
-        if (x != B1 && x != B3 && x != B4 && x != B5) {
-        console.log(`New number is ${x} belongs to "B"`);
-        B = true;
-        document.querySelector("#td6").textContent = x;
-        BNumber = x;
-        B2 = x;
-        }
-    } else if (x >= 16 && x <= 30) {
-        if (x != I1 && x != I3 && x != I4 && x != I5) {
-        console.log(`New number is ${x} belongs to "I"`);
-        I = true;
-        document.querySelector("#td7").textContent = x;
-        INumber = x;
-        I2 = x;
-        }
-    } else if (x >= 31 && x <= 45) {
-        if (x != N1 && x != N3 && x != N4 && x != N5) {
-        console.log(`New number is ${x} belongs to "N"`);
-        N = true;
-        document.querySelector("#td8").textContent = x;
-        NNumber = x;
-        N2 = x;
-        }
-    } else if (x >= 46 && x <= 60) {
-        if (x != G1 && x != G3 && x != G4 && x != G5) {
-        console.log(`New number is ${x} belongs to "G"`);
-        G = true;
-        document.querySelector("#td9").textContent = x;
-        GNumber = x;
-        G2 = x;
-        }
-    } else if (x >= 61 && x <= 75) {
-        if (x != O1 && x != O3 && x != O4 && x != O5) {
-        console.log(`New number is ${x} belongs to "O"`);
-        O = true;
-        document.querySelector("#td10").textContent = x;
-        ONumber = x;
-        O2 = x;
-        }
-    } else {
-        console.log(`New number ${x} is invalid.`);
-    }
-
-    if (B == true && I==true && N == true && G == true && O == true) {
-     console.log(`BINGOOOOOOO!!!!`);   
-     console.table({
-        B: BNumber,
-        I: INumber,
-        N: NNumber,
-        G: GNumber,
-        O: ONumber,
-     });
-    }
-}
-function newNumber3 (maxNumber) {
-    // Addition = "+"
-    // Subtraction = "-"
-    // Multiplication = "*"
-    // Division = "/"
-    // Remainder = "%"
-
-   let x = Math.floor(Math.random() * maxNumber) + 1;
-
-   // if ... else if ... else statement
-   // Conditional operator
-   // GE >=, LTE <=, EQ ==, NEQ ! =, AND &&, OR ||
-    if (x <= 15) {
-        if (x != B1 && x != B2 && x != B4 && x != B5) {
-        console.log(`New number is ${x} belongs to "B"`);
-        B = true;
-        document.querySelector("#td11").textContent = x;
-        BNumber = x;
-        B3 = x;
-        }
-    } else if (x >= 16 && x <= 30) {
-        if (x != I1 && x != I2 && x != I4 && x != I5) {
-        console.log(`New number is ${x} belongs to "I"`);
-        I = true;
-        document.querySelector("#td12").textContent = x;
-        INumber = x;
-        I3 = x;
-        }
-    } else if (x >= 31 && x <= 45) {
-        if (x != N1 && x != N2 && x != N4 && x != N5) { 
-        console.log(`New number is ${x} belongs to "N"`);
-        N = true;
-        document.querySelector("#td13").textContent = x;
-        NNumber = x;
-        N3 = x;
-        }
-    } else if (x >= 46 && x <= 60) {
-        if (x != G1 && x != G2 && x != G4 && x != G5) {
-        console.log(`New number is ${x} belongs to "G"`);
-        G = true;
-        document.querySelector("#td14").textContent = x;
-        GNumber = x;
-        G3 = x;
-        }
-    } else if (x >= 61 && x <= 75) {
-        if (x != O1 && x != O2 && x != O4 && x != O5) {
-        console.log(`New number is ${x} belongs to "O"`);
-        O = true;
-        document.querySelector("#td15").textContent = x;
-        ONumber = x;
-        O3 = x;
-        }
-    } else {
-        console.log(`New number ${x} is invalid.`);
-    }
-
-    if (B == true && I==true && N == true && G == true && O == true) {
-     console.log(`BINGOOOOOOO!!!!`);   
-     console.table({
-        B: BNumber,
-        I: INumber,
-        N: NNumber,
-        G: GNumber,
-        O: ONumber,
-     });
-    }
-}
-function newNumber4 (maxNumber) {
-
-    //HAYNAKO
-    // Addition = "+"
-    // Subtraction = "-"
-    // Multiplication = "*"
-    // Division = "/"
-    // Remainder = "%"
-
-   let x = Math.floor(Math.random() * maxNumber) + 1;
-
-   // if ... else if ... else statement
-   // Conditional operator
-   // GE >=, LTE <=, EQ ==, NEQ ! =, AND &&, OR ||
-    if (x <= 15) {
-        if (x != B1 && x != B2 && x != B3 && x != B5) {
-        console.log(`New number is ${x} belongs to "B"`);
-        B = true;
-        document.querySelector("#td16").textContent = x;
-        BNumber = x;
-        B4 = x;
-        }
-    } else if (x >= 16 && x <= 30) {
-        if (x != I1 && x != I2 && x != I3 && x != I5) {
-        console.log(`New number is ${x} belongs to "I"`);
-        I = true;
-        document.querySelector("#td17").textContent = x;
-        INumber = x;
-        I4 = x;
-        }
-    } else if (x >= 31 && x <= 45) {
-        if (x != N1 && x != N2 && x != N3 && x != N5) {
-        console.log(`New number is ${x} belongs to "N"`);
-        N = true;
-        document.querySelector("#td18").textContent = x;
-        NNumber = x;
-        N4 = x;
-        }
-    } else if (x >= 46 && x <= 60) {
-        if (x != G1 && x != G2 && x != G3 && x != G5) {
-        console.log(`New number is ${x} belongs to "G"`);
-        G = true;
-        document.querySelector("#td19").textContent = x;
-        GNumber = x;
-        G4 = x;
-        }
-    } else if (x >= 61 && x <= 75) {
-        if (x != O1 && x != O2 && x != O3 && x != O5) {
-        console.log(`New number is ${x} belongs to "O"`);
-        O = true;
-        document.querySelector("#td20").textContent = x;
-        ONumber = x;
-        O4 = x;
-    }
-    } else {
-        console.log(`New number ${x} is invalid.`);
-    }
-
-    if (B == true && I==true && N == true && G == true && O == true) {
-     console.log(`BINGOOOOOOO!!!!`);   
-     console.table({
-        B: BNumber,
-        I: INumber,
-        N: NNumber,
-        G: GNumber,
-        O: ONumber,
-     });
-    }
-}
-function newNumber5 (maxNumber) {
-    // Addition = "+"
-    // Subtraction = "-"
-    // Multiplication = "*"
-    // Division = "/"
-    // Remainder = "%"
-
-   let x = Math.floor(Math.random() * maxNumber) + 1;
-
-   // if ... else if ... else statement
-   // Conditional operator
-   // GE >=, LTE <=, EQ ==, NEQ ! =, AND &&, OR ||
-    if (x <= 15) {
-        if (x != B1 && x != B2 && x != B3 && x != B4) {
-        console.log(`New number is ${x} belongs to "B"`);
-        B = true;
-        document.querySelector("#td21").textContent = x;
-        BNumber = x;
-        B5 = x;
-        }
-    } else if (x >= 16 && x <= 30) {
-        if (x != I1 && x != I2 && x != I3 && x != I4) {
-        console.log(`New number is ${x} belongs to "I"`);
-        I = true;
-        document.querySelector("#td22").textContent = x;
-        INumber = x;
-        I5 = x;
-        }
-    } else if (x >= 31 && x <= 45) {
-        if (x != N1 && x != N2 && x != N3 && x != N4) {
-        console.log(`New number is ${x} belongs to "N"`);
-        N = true;
-        document.querySelector("#td23").textContent = x;
-        NNumber = x;
-        N5 = x;
-        }
-    } else if (x >= 46 && x <= 60) {
-        if (x != G1 && x != G2 && x != G3 && x != G4) {
-        console.log(`New number is ${x} belongs to "G"`);
-        G = true;
-        document.querySelector("#td24").textContent = x;
-        GNumber = x;
-        G5 = x;
-        }
-    } else if (x >= 61 && x <= 75) {
-        if (x != O1 && x != O2 && x != O3 && x != O4) {
-        console.log(`New number is ${x} belongs to "O"`);
-        O = true;
-        document.querySelector("#td25").textContent = x;
-        ONumber = x;
-        O5 =x;
-        }
-    } else {
-        console.log(`New number ${x} is invalid.`);
-    }
-
-    if (B == true && I==true && N == true && G == true && O == true) {
-     console.log(`BINGOOOOOOO!!!!`);   
-     console.table({
-        B: BNumber,
-        I: INumber,
-        N: NNumber,
-        G: GNumber,
-        O: ONumber,
-     });
-    }
-}
-
-
-
-//newNumber(75);
-let counter = 5;
-//for (counter; counter >= 0; counter--) {
-    //console.log(Current counter is ${counter});
-    //if (counter == 2) break;
-    //newNumber(75);
-//}
-
-//let counter = 0
-//while(counter >= 0){
-    //console.log(Current counter is ${counter});
-    //if (counter == 2 ) break;
-
-   // newNumber(75);
-    //counter--;
-
-//}
-
-//counter = 5;
-//do{
- //console.log (DoWhile, Current counter is ${counter});
- //counter--;
-//}
-//while (counter >= 0);
-
-while(!B || !I || !N || !G || !O ) {
    
-    newNumber1(75);
+
+
+   if (B == true && I==true && N == true && G == true && O == true) {
+     console.log(`BingoOOO!!!`)
+     console.table ({
+        B: BNumber,
+        I: INumber,
+        N: NNumber,
+        G: GNumber,
+        O: ONumber,
+     });   
+    }
 }
-B = false;
-I = false;
-N = false;
-G = false;
-O = false;
-while(!B || !I || !N || !G || !O ) {
-    newNumber2(75);
-    
+
+
+// LOOPS
+//let counter = 5;
+//for(counter; counter >= 0; counter -- ) {
+  // console.log(Current counter is ${counter});
+   //if (counter == 2) break;
+
+   //newNumber(75); }
+
+//let counter = 10;
+//while(counter >= 0 ){
+  // console.log(Current counter is ${counter});
+    //counter --; }
+
+while (B == false || I == false || N == false || G == false || O == false){
+    newNumber(75);
+    if (B || I || N || G || O) {
+        console.log(`BingoOOO!!!`)
+    }
 }
-B = false;
-I = false;
-N = false;
-G = false;
-O = false;
-while(!B || !I || !N || !G || !O ) {
-    newNumber3(75);
-    
-}
-B = false;
-I = false;
-N = false;
-G = false;
-O = false;
-while(!B || !I || !N || !G || !O ) {
-    newNumber4(75);
-    
-}
-B = false;
-I = false;
-N = false;
-G = false;
-O = false;
-while(!B || !I || !N || !G || !O ) {
-    newNumber5(75);
-    
+
+let cellValues = [];
+document.querySelectorAll("td").forEach(cell => {
+    cellValues.push(parseInt(cell.textContent));
+});
+
+let numColumns = document.querySelectorAll("tr")[0].childElementCount;
+
+cellValues.sort((a, b) => a - b);
+
+let index = 0;
+for (let col = 0; col < numColumns; col++) {
+    for (let row = 0; row < cellValues.length / numColumns; row++) {
+        document.querySelectorAll("td")[row * numColumns + col].textContent = cellValues[index++];
+    }
 }
