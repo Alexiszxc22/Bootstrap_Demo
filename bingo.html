@@ -2,18 +2,28 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <title>Bingo!</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</head>
+
+
 </head>
 
 <body>
-    <div>
-        <table class="table table-bordered text-center table-hover ">
-            <!--Main Table-->
+    <div class="table-responsive" style="text-align: center">
+        <table class="table table-dark table-striped">
             <thead>
                 <!--Heading-->
                 <th style="background-color: black;">
@@ -32,48 +42,58 @@
                     <h1 style="color: aqua;">O</h1>
                 </th>
             </thead>
-            <tbody> <!--Body-->
-                <tr style="background-color: tomato;"> <!--Table Row-->
-                    <td id="tr1" style="color: bisque;">1</td>
-                    <td id="tr2" style="color: bisque;">16</td>
-                    <td id="tr3" style="color: bisque;">35</td>
-                    <td id="tr4" style="color: bisque;">48</td>
-                    <td id="tr5" style="color: bisque;">64</td>
-                </tr>
-                <tr id="tr2" style="background-color: gold;">
-                    <td id="tr6" style="color: black">4</td>
-                    <td id="tr7" style="color: black;">30</td>
-                    <td id="tr8" style="color: black;">33</td>
-                    <td id="tr9" style="color: black;">49</td>
-                    <td id="tr10" style="color: black;">65</td>
-                </tr>
-                <tr style="background-color: tomato;">
-                    <td id="tr11" style="color: bisque;">9</td>
-                    <td id="tr12" style="color: bisque;">22</td>
-                    <td style="color: aqua;">BINGO</td>
-                    <td id="tr14" style="color: bisque;">42</td>
-                    <td id="tr15" style="color: bisque;">73</td>
-                </tr>
-                <tr style="background-color: gold;">
-                    <td id="tr16" style="color: black;">15</td>
-                    <td id="tr17" style="color: black;">25</td>
-                    <td id="tr18" style="color: black;">37</td>
-                    <td id="tr19" style="color: black;">46</td>
-                    <td id="tr20" style="color: black;">75</td>
-                </tr>
-                <tr style="background-color: tomato;">
-                    <td id="tr21" style="color: bisque;">12</td>
-                    <td id="tr22" style="color: bisque;">26</td>
-                    <td id="tr23" style="color: bisque;">38</td>
-                    <td id="tr24" style="color: bisque;">44</td>
-                    <td id="tr25" style="color: bisque;">70</td>
-                </tr>
-            </tbody>
-            <tfoot>
+            <tbody id="table">
+                <tr>
+                    <td id="td1">3</td>
+                    <td id="td2">15</td>
+                    <td id="td3">31</td>
+                    <td id="td4">46</td>
+                    <td id="td5">61</td>
 
-            </tfoot>
-        </table>
+
+                </tr>
+                <tr>
+                    <td id="td6">4</td>
+                    <td id="td7">17</td>
+                    <td id="td8">35</td>
+                    <td id="td9">51</td>
+                    <td id="td10">63</td>
+                </tr>
+                <tr>
+                    <td id="td11">6</td>
+                    <td id="td12">18</td>
+                    <td id="td13">39</td>
+                    <td id="td14">53</td>
+                    <td id="td15">67</td>
+                </tr>
+                <tr>
+                    <td id="td16">9</td>
+                    <td id="td17">19</td>
+                    <td id="td18">40</td>
+                    <td id="td19">57</td>
+                    <td id="td20">69</td>
+                </tr>
+                <tr>
+                    <td id="td21">10</td>
+                    <td id="td22">20</td>
+                    <td id="td23">41</td>
+                    <td id="td24">59</td>
+                    <td id="td25">75</td>
+                </tr>
+                <tr>
+
+
+                </tr>
+
+
+
+
+
+            </tbody>
+
     </div>
+
+
 </body>
 <script src="./index.js"></script>
 
