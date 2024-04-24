@@ -240,10 +240,8 @@ function newNumber3 (maxNumber) {
     }
 }
 function newNumber4 (maxNumber) {
-<<<<<<< HEAD
+
     //HAYNAKO
-=======
->>>>>>> 26b05fce287756d0d0c3434a60a6f2ef017096a0
     // Addition = "+"
     // Subtraction = "-"
     // Multiplication = "*"
